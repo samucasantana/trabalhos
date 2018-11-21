@@ -1,0 +1,32 @@
+@mixin radius($value){
+	-webkit-border-radius:$value;
+	-moz-border-radius:$value;
+	border-radius:$value;
+}
+.flip-cards{
+	@include radius(15px);
+	-webkit-box-shadow: 0px 10px 17px -5px rgba(181,175,181,1);
+	-moz-box-shadow: 0px 10px 17px -5px rgba(181,175,181,1);
+	box-shadow: 0px 10px 17px -5px rgba(181,175,181,1);
+	height: 70vh;
+	margin: 1rem;
+	overflow: hidden;
+	padding: 1rem;
+	width: 70vh;
+}
+.codigo{
+	overflow: hidden;
+	padding: 1rem;
+	background: #f5f5f5;
+}
+.codigo-copy{
+	cursor: pointer;
+	transition: .4s;
+	&:hover{
+		transition: .4s;
+		color:#22a7f0;
+	}
+}
+.identention{
+	margin-left:8%; 
+}

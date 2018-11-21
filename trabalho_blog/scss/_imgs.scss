@@ -1,0 +1,11 @@
+.img-container{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.round{
+	flex-flow: 1;
+	@include radius(50%);
+	max-width: 100%;
+	width: 50%;
+}

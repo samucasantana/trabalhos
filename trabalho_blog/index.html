@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo 04</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles-min.css"media="none" onload="if(media != 'all')media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<main class="wrapper" id="home">
+		<div class="hero-container">
+			<header>
+				<nav class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="nav-item">
+								<li class="li-item">
+									<a href="#home" class="link-item">Home</a>
+									<a class="link-item">|</a>
+									<a href="#selectOpcoes" class="link-item">Solução</a>
+									<a class="link-item">|</a>
+									<a href="#QuemSomos" class="link-item">Quem Somos</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="container main-tour">
+				<div class="row">
+					<div class="col-lg-9 tour__start">
+						<h1 class="h1-jumbo">Grupo 4 Solução</h1>
+						<a class="btn-start" href="#escolha">Iniciar Tour</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="escolha">
+					<div class="d-flex justify-content-center">
+						<h1 class="h1 text-muted">Escolha o Problema  a ser exibido</h1>
+					</div>
+					<div class="d-flex justify-content-center" id="selectOpcoes">
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							<a id="solu1" for="selectProblem" class="btn btn-secondary btn-lg active" 
+							href="#problem1070">
+								<input type="radio" name="solucao1"  autocomplete="off" checked>1070.py
+							</a>
+							<a for="selectProblem" id="solu2" class="btn btn-secondary btn-lg" href="#problem1183">
+								<input type="radio" id="input1183" name="solucao2" autocomplete="off">1183.py
+							</a> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container problem " id="problem1070">
+			<div class="row">
+				<div class="col">
+					<h1 class="h1 text-muted">Passo a Passo - 1070.py</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-1</h2>
+					<p>#Recebendo o input de um numero inteiro para mostrar os proximos cinco numeros impares</p>
+					<p class="text-muted codigo">n = int(input())</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-2</h2>
+					<p>#Criando uma variavel para a contagem de numeros impares ja encontrados</p>
+					<p class="text-muted codigo">counter = 0</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-3</h2>
+					<p>#Comprovando se o numero recebido é par</p>
+					<p>#Caso ele seja par aumento ele em um para conseguir o proximo impar</p>
+					<p class="text-muted codigo">
+						if n%2 == 0:<br>
+    					<span class="identention"></span>n += 1<br>
+    					<span class="identention"></span>print(n)<br>
+    					<span class="identention"></span>counter += 1
+					</p> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-4</h2>
+					<p>#Caso ele seja impar aumento o counter em um e mostro o numero</p>
+					<p class="text-muted codigo">
+						else:<br>
+					    counter += 1
+					    print(n)
+					</p> 
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-5</h2>
+					<p>#Aqui mostro todos os proximos numeros impares ate completar 5</p>
+					<p>#Se recebi um numero impar ele calculara so mais 4</p>
+					<p class="text-muted codigo">
+						while counter < 6:<br>
+					    <span class="identention"></span>n += 2<br>
+					    <span class="identention"></span>counter += 1<br>
+					    <span class="identention"></span>print(n)
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container problem" id="problem1183">
+			<div class="row">
+				<div class="col">
+					<h1 class="h1 text-muted">Passo a Passo - 1183.py</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-1</h2>
+					<p>Recebendo o input do tipo de operação a ser realizada</p>
+					<p class="text-muted codigo">operação = str(input())</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-2</h2>
+					<p>Inicializando uma matriz de zeros de tamanho 12x12 Precisa 
+					inicializar com qualquer valor antes de poder usar 
+					a matriz para receber input</p>
+					<p class="text-muted codigo">Matrix = [[0 for x in range(12)] for y in range(12)]</p>
+					<p>Percorrendo a matriz e asignando os 144 valores recebidos pelo urionline</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-3</h2>
+					<p>Usando o primeiro loop para percorrer as linhas e o segundo as colunas
+					   Assim percorrendo todos os espações possiveis da matriz linha por linha</p>
+					<p class="text-muted codigo">
+						for i in range(12):<br>
+    					<span class="identention"></span>for j in range(12):<br>
+        				<span class="identention"></span>Matrix[i][j] = float(input())
+					</p> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-4</h2>
+					<p>Inicializando a variavel somatoria para poder fazer o primeiro passo das duas operações possiveis</p>
+					<p class="text-muted codigo">somatoria = 0</p>
+					<p>Inicializando o valor coluna para poder percorrer so os valores acima da diagonal principal</p>
+					<p class="text-muted codigo">coluna = 1</p> 
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-5</h2>
+					<p>Fazendo a contagem de numeros processados para poder fazer a dividir pela somatoria e poder tirar a media dos elementos acima da diagonal</p>
+					<p class="text-muted codigo">numerosPercorridos = 0</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-6</h2>
+					<p>Percorrendo apenas os elementos acima da diagonal principal e somando todos eles</p>
+					<p class="text-muted codigo">
+						for i in range(12):<br>
+						<span class="identention"></span>for j in range(coluna, 12):<br>
+						<span class="identention"></span>somatoria += Matrix[i][j]<br>
+						<span class="identention"></span>numerosPercorridos += 1<br>
+						<span class="identention"></span>coluna += 1
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-7</h2>
+					<p>Uma vez somados caso a operação seja media fazendo a divisao e devolvendo o resultado</p>
+					<p class="text-muted codigo">
+						if "M" == operação:<br>
+    					<span class="identention"></span>print("%.1f" % (somatoria/numerosPercorridos))
+					</p>
+				</div>
+				<div class="col-lg-3 flip-cards">
+					<h2 class="h2 text-muted"><span class="codigo-copy">#</span>-8</h2>
+					<p>Se a operação nao for media devolvendo o valor da somatoria</p>
+					<p class="text-muted codigo">
+						else:<br><span class="identention"></span>print("%.1f" % somatoria)
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flat-button_container">
+			<button class="float-button hidden" id="topButton"><i class="fas fa-arrow-up"></i></button>
+			<button class="float-button hidden" id="shareButton"><i class="fab fa-github-alt"></i></button>
+			<button class="float-button hidden" id="likeButton"><i class="fas fa-heart"></i></button>
+			<button class="float-button" id="toggleButton">
+				<span class="float-more"></span>
+				<span class="float-more"></span>
+				<span class="float-more"></span>
+			</button>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col"><h2 class="text-muted" id="QuemSomos">Quem Somos</h2></div>
+			</div>
+			<div class="row">
+				<div class="col flip-cards">
+					<figure class="img-container">
+						<div class="center">
+							<center>
+								<img src="img/samuca.jpg" class="round" alt="Samuel Santana">
+							</center>
+						</div>
+					</figure>
+					<h4 class="text-muted">Samuel Santana</h4>
+					<p class="text-muted">Programador Front-End <br>UX e UI Designer Web Disgner, Desgner Gráfico
+					<p class="text-muted">Estudante de Analise de Sistemas Fatec Ferraz de Vasconcelos</p>
+				</div>
+				<div class="col flip-cards">
+					<figure class="img-container">
+						<div class="center">
+							<center>
+								<img src="img/bigode-min.jpg" class="round" alt="Matheus Silva">
+							</center>
+						</div>
+					</figure>
+					<h4 class="text-muted">Matheus Silva</h4>
+					<p class="text-muted">Web Designer, skatista e estagiario</p>
+					<p class="text-muted">Estudante de Analise de Sistemas Fatec Ferraz de Vasconcelos</p>
+				</div>
+				<div class="col flip-cards">
+					<figure class="img-container">
+						<div class="center">
+							<center>
+								<img src="img/japa-min.jpg" class="round" alt="Matheus Hideo">
+							</center>
+						</div>
+					</figure>
+					<h4 class="text-muted">Matheus Hideo</h4>
+					<p class="text-muted">Back-End Programador SQL</p>
+					<p class="text-muted">Estudante de Analise de Sistemas Fatec Ferraz de Vasconcelos</p>
+				</div>
+				<div class="col flip-cards">
+					<figure class="img-container">
+						<div class="center">
+							<center>
+								<img src="img/python-min.jpg" class="round" alt="Carlos Mir">
+							</center>
+						</div>
+					</figure>
+					<h4 class="text-muted">Carlos Mir</h4>
+					<p class="text-muted">Programador Python</p>
+					<p class="text-muted">Estudante de Analise de Sistemas Fatec Ferraz de Vasconcelos</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main-min.js"></script>
+</html>

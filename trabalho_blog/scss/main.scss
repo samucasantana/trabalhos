@@ -1,0 +1,47 @@
+@import "cards.scss","buttons.scss","imgs.scss";
+html{
+	scroll-behavior: smooth;
+}
+.nav-item{
+	.li-item{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		list-style: none;
+		.link-item{
+			color:#ffff;
+			flex-shrink: 1;
+			padding:1rem;
+			text-decoration: none;
+		}
+	}
+}
+.main-tour{
+	height: 70vh;
+	width: 100vh;
+}
+.tour__start{
+	align-items:flex-start;
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 10%;
+}
+.h1-jumbo{
+	color:white;
+	font:{
+		size:5rem;
+		weight:100; 
+		} 
+}
+.hero-container{
+    background: #7c1f9e;
+    background: -webkit-linear-gradient(bottom left, #7c1f9e 0%, #7db9e8 100%);
+    background: -o-linear-gradient(bottom left, #7c1f9e 0%, #7db9e8 100%);
+    background: linear-gradient(to top right, #7c1f9e 0%, #7db9e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c1f9e', endColorstr='#7db9e8',GradientType=1 );
+    -webkit-box-shadow: 3px 12px 23px -11px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 12px 23px -11px rgba(0,0,0,0.75);
+	box-shadow: 3px 12px 23px -11px rgba(0,0,0,0.75);
+	height: 100vh;
+}
+

@@ -1,0 +1,73 @@
+@mixin floatButtonValue($width,$height,$bottom,$right){
+	width: $width;
+	height: $height;
+	bottom: $bottom;
+	right: $right;
+}
+.btn-start{
+	@include radius(15px);
+	color: #fff !important;
+	width: 15%;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: .4s;
+	border:2px solid white;
+	text-decoration: none !important;
+	&:hover{
+		transition: .4s;
+		background: white;
+		width: 20%;
+		color:#52b3d9 !important;
+	}
+}
+.float-button{
+	align-items: center;
+	bottom: 20px;
+	-webkit-box-shadow: 3px 6px 17px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 6px 17px -7px rgba(0,0,0,0.75);
+	box-shadow: 3px 6px 17px -7px rgba(0,0,0,0.75);
+	border: none;
+	background: white;
+	@include radius(50%);
+	color: #000;
+	cursor: pointer;
+	display: flex;
+	flex-flow: row nowrap;
+	height: 50px;
+	line-height: 10px;
+	overflow: hidden;
+	outline: none !important;
+	right: 3%;
+	transition: .4s;
+	position: fixed;
+	width: 50px;
+	z-index: 1;
+	.float-more{
+		@include radius(50%);
+		border: none;
+		background: #333;
+		overflow: hidden;
+		margin: 2px;
+		height: 6px;
+		width: 6px;
+	}
+}
+#toggleButton{
+	&:hover{
+		transition: .4s;
+		transform: scale(1.1);
+	}
+}
+#topButton{
+	@include floatButtonValue(35px,35px,19%,6%);
+}
+#shareButton{
+	@include floatButtonValue(35px,35px,13%,10%);
+}
+#likeButton{
+	@include floatButtonValue(35px,35px,20px,11%);
+}
+.hidden{
+	display: none;
+}
